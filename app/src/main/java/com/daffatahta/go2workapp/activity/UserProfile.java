@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.daffatahta.go2workapp.R;
 
-public class companyProfile extends AppCompatActivity {
+public class UserProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_company_profile);
+        setContentView(R.layout.activity_user_profile);
     }
 }

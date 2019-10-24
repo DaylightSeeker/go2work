@@ -20,4 +20,13 @@
         <item name="colorControlActivated">@color/putih</item>
     </style>
 
+    <style name="Tanggal_input">
+        <item name="android:padding">20dp</item>
+        <item name="android:paddingTop">2dp</item>
+    </style>
+
+    <style name="AppTheme.slidr">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>

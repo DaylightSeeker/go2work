@@ -1,4 +1,4 @@
-package com.daffatahta.go2workapp;
+package com.daffatahta.go2workapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,19 +8,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.daffatahta.go2workapp.activity.UserRegister;
+import com.daffatahta.go2workapp.R;
 
-public class MainActivity extends AppCompatActivity {
+import org.w3c.dom.Text;
+
+public class Register extends AppCompatActivity {
 
     private Button buttonUser;
     private Button buttonCompany;
-    private TextView goToLoginText;
-
+    private TextView goToLoginText
+            ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_company_register);
         buttonUser = (Button) findViewById(R.id.userRegister);
         buttonUser.setOnClickListener(new View.OnClickListener() {
             @Override

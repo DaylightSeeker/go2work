@@ -4,106 +4,175 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.companyProfile"
-    android:background="@color/hitam">
+    android:background="@color/hitam"
+    tools:context=".activity.CompanyProfile">
 
     <TextView
         android:id="@+id/profileTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/roboto_boldcondensed"
         android:text="PROFILE"
-        android:textColor="@color/putih"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="56dp" />
+        android:textColor="@color/companyColor"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewNamaCompany"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Nama"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="-"
         android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="145dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Username"
         android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textViewUsernameCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textViewEmailCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="-"
+        android:textColor="@color/putih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsernameCompany" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Email"
         android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="245dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textViewEmailCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textViewKotaCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="-"
+        android:textColor="@color/putih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailCompany" />
+
+    <TextView
+        android:id="@+id/textViewUsernameCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="-"
+        android:textColor="@color/putih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamaCompany" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Kota"
         android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textViewKotaCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textViewWebsiteCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="-"
+        android:textColor="@color/putih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKotaCompany" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Nama"
+        android:textColor="@color/putih"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNamaCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Website"
         android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textViewWebsiteCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="200dp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/putih"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:background="@color/putih"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="149dp" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="@color/putih"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="245dp" />
-
-    <TextView
-        android:id="@+id/userViewEmail"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="@color/putih"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="305dp" />
-
-    <TextView
-        android:id="@+id/userViewStatus"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:background="@color/putih"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="363dp" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

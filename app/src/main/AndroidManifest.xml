@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.userRegister"></activity>
-        <activity android:name=".activity.companyRegister" />
-        <activity android:name=".activity.companyProfile" />
-        <activity android:name=".activity.userProfile" />
-        <activity android:name=".activity.login" />
+        <activity android:name=".activity.UserRegister"
+            android:theme="@style/AppTheme.slidr"></activity>
+        <activity android:name=".activity.CompanyRegister" />
+        <activity android:name=".activity.CompanyProfile" />
+        <activity android:name=".activity.UserProfile" />
+        <activity android:name=".activity.Login" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".activity.register" />
+        <activity android:name=".activity.Register" />
         <activity android:name=".activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

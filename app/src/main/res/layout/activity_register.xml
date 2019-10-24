@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/common_google_signin_btn_text_dark_focused"
-    tools:context=".activity.register">
+    tools:context=".activity.Register">
 
     <Button
-        android:id="@+id/pekerja_register"
+        android:id="@+id/userRegister"
         android:layout_width="925px"
         android:layout_height="425px"
         android:background="@drawable/button2"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.478" />
 
     <TextView
-        android:id="@+id/login_text"
+        android:id="@+id/redirectToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_bold"
@@ -51,12 +51,16 @@
         android:textColor="#F9957F"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="toLogin"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.478"
+
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -73,7 +77,7 @@
         app:layout_constraintGuide_begin="566dp" />
 
     <Button
-        android:id="@+id/register_company"
+        android:id="@+id/companyRegister"
         android:layout_width="947px"
         android:layout_height="425px"
         android:background="@drawable/button1"
@@ -81,7 +85,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintVertical_bias="0.605"
+        />
 
     <TextView
         android:id="@+id/textView3"

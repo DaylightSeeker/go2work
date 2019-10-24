@@ -5,119 +5,204 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/hitam"
-    tools:context=".activity.userRegister">
+    tools:context=".activity.UserRegister">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/tahomabd"
         android:text="Silahkan Isi Form Berikut :"
         android:textColor="@color/oren"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="43dp" />
-
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Malang"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="464dp" />
-
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Username"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/userViewTanggalLahir"
+        android:id="@+id/usernameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/tahoma"
         android:text="Username :"
         android:textColor="@color/putih"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="164dp" />
-
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="example@gmail.com"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="257dp" />
-
-    <TextView
-        android:id="@+id/userViewNama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email :"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="233dp" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kota"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="440dp" />
-
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Jawa Timur"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="395dp" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tanggal Lahir :"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="302dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/tahoma"
         android:text="Provinsi"
         android:textColor="@color/putih"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateListener" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Password :"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsernameUser" />
+
+    <EditText
+        android:id="@+id/textViewProvinsiUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:ems="10"
+        android:fontFamily="@font/tahoma"
+        android:hint="Input Provinsi"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/textViewEmailUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:fontFamily="@font/tahoma"
+        android:hint="someone@gmail.com"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userViewNama" />
+
+    <EditText
+        android:id="@+id/textViewUsernameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:ems="10"
+        android:fontFamily="@font/tahoma"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
+
+    <TextView
+        android:id="@+id/userViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Email :"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordUser" />
+
+    <EditText
+        android:id="@+id/textViewKotaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:fontFamily="@font/tahoma"
+        android:hint="Input Kota"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/dateListener"
+        android:layout_width="215dp"
+        style="@style/Tanggal_input"
+        android:layout_height="52dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:text="Tanggal Lahir"
+        android:textColor="@color/putih"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Tanggal Lahir :"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailUser" />
+
+    <EditText
+        android:id="@+id/passwordUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:ems="10"
+        android:hint="Password Here"
+        android:inputType="textPassword"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:fontFamily="@font/tahoma"
+        android:text="Kota"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProvinsiUser" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="360px"
+        android:layout_height="150px"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/button_company"
+        android:fontFamily="@font/roboto_regular"
         android:text="Next"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="622dp" />
+        android:textColor="@color/putih"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
@@ -126,12 +211,11 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="37dp" />
 
-    <TextView
-        android:id="@+id/dateListener"
-        android:layout_width="215dp"
-        android:layout_height="45dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="326dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="133dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
