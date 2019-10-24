@@ -4,123 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.companyRegister"
-    android:background="@color/hitam">
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.companyRegister">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="119dp"
+        android:fontFamily="@font/rubik_bold"
         android:text="Silahkan Isi Form Berikut :"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="36dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/putih"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Username"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="126dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="example@gmail.com"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="213dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="277dp" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/putih"
-        android:text="password"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="301dp" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Perusahaan"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="374dp" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nama Perusahaan"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="398dp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kota"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="475dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Website"
-        android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="566dp" />
-
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="company.com"
-        android:textColor="@color/putih"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="585dp" />
+        app:layout_constraintBottom_toTopOf="@+id/usernameInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/textView5"
@@ -129,26 +31,189 @@
         android:text="Username :"
         android:textColor="@color/putih"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="102dp" />
+        app:layout_constraintBottom_toTopOf="@+id/usernameInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        android:fontFamily="@font/tahoma"/>
 
-    <EditText
-        android:id="@+id/editText5"
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        android:fontFamily="@font/tahoma"/>
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Input Username Here"
+        android:inputType="text"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:theme="@style/EditTextCompany"
+        app:layout_constraintBottom_toTopOf="@+id/emailInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:fontFamily="@font/tahoma"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput"
+        android:fontFamily="@font/tahoma"/>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="someone@gmail.com"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:theme="@style/EditTextCompany"
+        app:layout_constraintBottom_toTopOf="@+id/passInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput"
+        android:fontFamily="@font/tahoma"/>
+
+    <TextView
+        android:id="@+id/userViewPendidikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Perusahaan"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/passInput"
+        android:fontFamily="@font/tahoma"/>
+
+    <EditText
+        android:id="@+id/kotaInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Kota"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:theme="@style/EditTextCompany"
+        app:layout_constraintBottom_toTopOf="@+id/websiteInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/companyNameInput"
+        />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kota"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/companyNameInput"
+        android:fontFamily="@font/tahoma"/>
+
+    <TextView
+        android:id="@+id/userViewKeahlian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/kotaInput"
+        android:fontFamily="@font/tahoma"/>
+
+    <EditText
+        android:id="@+id/companyNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
-        android:text="Malang"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="499dp" />
+        app:layout_constraintBottom_toTopOf="@+id/kotaInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/passInput"
+        android:hint="A Company"
+        android:textColorHint="@color/grey"
+        android:theme="@style/EditTextCompany"
+        android:fontFamily="@font/tahoma"
+        />
 
-    <Button
-        android:id="@+id/button"
+    <EditText
+        android:id="@+id/websiteInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="acompany.com"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:theme="@style/EditTextCompany"
+        app:layout_constraintBottom_toTopOf="@+id/registerNextButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/kotaInput"
+        />
+
+    <Button
+        android:id="@+id/registerNextButton"
+        android:layout_width="360px"
+        android:layout_height="0dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/button_company"
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="registerButtonHandler"
         android:text="Next"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="651dp" />
+        android:textColor="@color/putih"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/websiteInput"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="41dp"
+        />
+
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily=""
+        android:hint="Password Here"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey"
+        android:theme="@style/EditTextCompany"
+        app:layout_constraintBottom_toTopOf="@+id/companyNameInput"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

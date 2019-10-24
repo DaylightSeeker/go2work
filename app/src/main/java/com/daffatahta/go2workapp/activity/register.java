@@ -11,6 +11,6 @@ public class register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_Register);
+        setContentView(R.layout.activity_company_register);
     }
 }

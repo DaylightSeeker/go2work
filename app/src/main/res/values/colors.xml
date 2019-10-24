@@ -6,4 +6,7 @@
     <color name="hitam">#030002</color>
     <color name="putih">#FFFFFF</color>
     <color name="oren">#FF5722</color>
+    <color name="companyColor">#FF0078</color>
+    <color name="userColor">#E1805F</color>
+    <color name="grey">#6D6B6B</color>
 </resources>
