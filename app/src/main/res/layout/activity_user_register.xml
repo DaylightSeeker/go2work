@@ -28,10 +28,10 @@
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:layout_marginTop="58dp"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:text="Username :"
         android:textColor="@color/putih"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -41,13 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
-        android:layout_marginTop="1dp"
-        android:fontFamily="@font/tahoma"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Provinsi"
         android:textColor="@color/putih"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateListener" />
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView17"
@@ -55,10 +55,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:text="Password :"
         android:textColor="@color/putih"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewUsernameUser" />
 
@@ -69,11 +69,12 @@
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:ems="10"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:hint="Input Provinsi"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -85,11 +86,12 @@
         android:layout_marginLeft="38dp"
         android:layout_marginTop="1dp"
         android:ems="10"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:hint="someone@gmail.com"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userViewNama" />
 
@@ -100,11 +102,12 @@
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:ems="10"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:hint="username"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
 
@@ -114,10 +117,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:text="Email :"
         android:textColor="@color/putih"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordUser" />
 
@@ -129,25 +132,14 @@
         android:layout_marginLeft="38dp"
         android:layout_marginTop="1dp"
         android:ems="10"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:hint="Input Kota"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-    <TextView
-        android:id="@+id/dateListener"
-        android:layout_width="215dp"
-        style="@style/Tanggal_input"
-        android:layout_height="52dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:text="Tanggal Lahir"
-        android:textColor="@color/putih"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView24"
@@ -155,10 +147,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:text="Tanggal Lahir :"
         android:textColor="@color/putih"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewEmailUser" />
 
@@ -169,10 +161,12 @@
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:ems="10"
+        android:fontFamily="@font/roboto_regular"
         android:hint="Password Here"
         android:inputType="textPassword"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -182,17 +176,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
-        android:fontFamily="@font/tahoma"
+        android:fontFamily="@font/roboto_regular"
         android:text="Kota"
         android:textColor="@color/putih"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewProvinsiUser" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="360px"
-        android:layout_height="150px"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="84dp"
@@ -200,7 +194,7 @@
         android:fontFamily="@font/roboto_regular"
         android:text="Next"
         android:textColor="@color/putih"
-        android:textSize="23sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

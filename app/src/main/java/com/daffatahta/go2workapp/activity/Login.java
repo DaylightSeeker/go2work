@@ -10,17 +10,20 @@ import android.widget.TextView;
 import com.daffatahta.go2workapp.R;
 
 public class Login extends AppCompatActivity {
-    TextView login;
+    private TextView toRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        toRegister = (TextView) findViewById(R.id.textViewRegisterRedirect);
+        toRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toRegister();
+            }
+        });
     }
-
-    public void redirectToRegister(View view) {
-        Intent toRegister = new Intent(this, Register.class);
-        startActivity(toRegister);
-        finish();
+    public void toRegister (){
+        Intent i = new Intent(this, Register.class);
     }
 }

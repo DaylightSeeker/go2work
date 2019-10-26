@@ -38,12 +38,10 @@
         android:layout_marginLeft="5dp"
         android:fontFamily="@font/roboto_boldcondensed"
         android:text="Sini"
-        android:onClick="redirectToRegister"
         android:textColor="@color/companyColor"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/redirectToLogin"
-        app:layout_constraintStart_toEndOf="@+id/redirectToLogin"
-        />
+        app:layout_constraintStart_toEndOf="@+id/redirectToLogin" />
 
     <TextView
         android:id="@+id/textView12"
