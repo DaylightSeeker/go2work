@@ -10,10 +10,47 @@
       "client_info": {
         "mobilesdk_app_id": "1:8455517798:android:a1f6df6a7145e16135dfa7",
         "android_client_info": {
+          "package_name": "com.daffatahta.GO2WORKapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8455517798-21an5tbvee5mhk7ed7h3qo9rv843leg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzcWEgDdvVqC0I0yWwvyDm-uFOpKsFeNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8455517798-21an5tbvee5mhk7ed7h3qo9rv843leg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8455517798:android:b977e1cf563647e535dfa7",
+        "android_client_info": {
           "package_name": "com.daffatahta.go2workapp"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "8455517798-6sjtl1qb6b6mhjusue5jkmd9vfdk9ed9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daffatahta.go2workapp",
+            "certificate_hash": "aa056f2dd47983c3081c6ad936c2917f4b76b7af"
+          }
+        },
         {
           "client_id": "8455517798-21an5tbvee5mhk7ed7h3qo9rv843leg4.apps.googleusercontent.com",
           "client_type": 3
