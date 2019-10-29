@@ -9,19 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.UserRegister"
-            android:theme="@style/AppTheme.slidr"></activity>
-        <activity android:name=".activity.CompanyRegister"
-            android:theme="@style/AppTheme.slidr"/>
-        <activity android:name=".activity.CompanyProfile"
-            android:theme="@style/AppTheme.slidr"/>
-        <activity android:name=".activity.UserProfile"
-            android:theme="@style/AppTheme.slidr"/>
-        <activity android:name=".activity.Login"
-            android:theme="@style/AppTheme.slidr"/>
+        <activity
+            android:name=".activity.UserRegister"
+            android:theme="@style/AppTheme.slidr" />
+        <activity
+            android:name=".activity.CompanyRegister"
+            android:theme="@style/AppTheme.slidr" />
+        <activity
+            android:name=".activity.CompanyProfile"
+            android:theme="@style/AppTheme.slidr" />
+        <activity
+            android:name=".activity.UserProfile"
+            android:theme="@style/AppTheme.slidr" />
+        <activity
+            android:name=".activity.Login"
+            android:theme="@style/AppTheme.slidr" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".activity.Register"
-            android:theme="@style/AppTheme.slidr"/>
+        <activity
+            android:name=".activity.Register"
+            android:theme="@style/AppTheme.slidr" />
         <activity android:name=".activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

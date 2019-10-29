@@ -11,192 +11,180 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="42dp"
         android:fontFamily="@font/tahomabd"
         android:text="Silahkan Isi Form Berikut :"
         android:textColor="@color/oren"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/usernameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginBottom="1dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Username :"
         android:textColor="@color/putih"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUsernameUser"
+        app:layout_constraintStart_toStartOf="@+id/textViewUsernameUser" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Provinsi"
         android:textColor="@color/putih"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
+        android:layout_marginBottom="41dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Password :"
         android:textColor="@color/putih"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsernameUser" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/userViewNama"
+        app:layout_constraintStart_toStartOf="@+id/guideline10" />
 
     <EditText
         android:id="@+id/textViewProvinsiUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="Input Provinsi"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <EditText
         android:id="@+id/textViewEmailUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="1dp"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="someone@gmail.com"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userViewNama" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/guideline10" />
 
     <EditText
         android:id="@+id/textViewUsernameUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="username"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/userViewNama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
+        android:layout_marginBottom="1dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Email :"
         android:textColor="@color/putih"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordUser" />
-
-    <EditText
-        android:id="@+id/textViewKotaUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="1dp"
-        android:ems="10"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="Input Kota"
-        android:inputType="textPersonName"
-        android:textColor="@color/putih"
-        android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmailUser"
+        app:layout_constraintStart_toStartOf="@+id/guideline10" />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Tanggal Lahir :"
         android:textColor="@color/putih"
-        android:textSize="12sp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmailUser" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/passwordUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="Password Here"
         android:inputType="textPassword"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
+        android:layout_marginTop="41dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Kota"
         android:textColor="@color/putih"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProvinsiUser" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/textViewProvinsiUser" />
+
+    <EditText
+        android:id="@+id/textViewKotaUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Input Kota"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="150dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="84dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button_company"
         android:fontFamily="@font/roboto_regular"
         android:text="Next"
         android:textColor="@color/putih"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
@@ -211,5 +199,38 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="133dp" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="22dp"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Tanggal"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDate"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:background="@drawable/invertedcalndar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

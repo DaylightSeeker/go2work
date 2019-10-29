@@ -1,3 +1,27 @@
 <resources>
+    <string-array name="kota">
+        <item>Jakarta</item>
+        <item>Surabaya</item>
+        <item>Malang</item>
+    </string-array>
+
+    <string-array name="provinsi">
+        <item>Jawa Timur</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+    </string-array>
+
+    <string-array name="job_type">
+        <item>Full Time</item>
+        <item>Part Time</item>
+        <item>Internship</item>
+    </string-array>
+
+    <string-array name="pendidikan">
+        <item>D3</item>
+        <item>D4/Sarjana</item>
+        <item>S2</item>
+    </string-array>
+
     <string name="app_name">GO2Work</string>
 </resources>

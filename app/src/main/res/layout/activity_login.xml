@@ -4,97 +4,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.login"
-    android:background="@color/hitam">
+    android:background="@color/hitam"
+    tools:context=".activity.Login">
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Belum punya akun ?"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Belum punya akun?"
         android:textColor="@color/putih"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="652dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/redirectToLogin"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
 
     <TextView
-        android:id="@+id/login_text"
+        android:id="@+id/redirectToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/rubik_bold"
-        android:text="Register disini"
-        android:textColor="@color/oren"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Register di"
+        android:textColor="@color/putih"
         android:textSize="18sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="652dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="311dp"
-        android:layout_height="48dp"
-        android:text="Login"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="469dp" />
+    <TextView
+        android:id="@+id/textViewRegisterRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/roboto_boldcondensed"
+        android:text="Sini"
+        android:textColor="@color/companyColor"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/redirectToLogin"
+        app:layout_constraintStart_toEndOf="@+id/redirectToLogin" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:textColor="@color/putih"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="52dp" />
+        android:fontFamily="@font/roboto_boldcondensed"
+        android:text="LOG"
+        android:textColor="@color/companyColor"
+        android:textSize="50sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
 
     <TextView
-        android:id="@+id/password"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto_boldcondensed"
+        android:text="IN"
+        android:textColor="@color/oren"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPasswordLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="Password Here"
+        android:inputType="textPassword"
         android:textColor="@color/putih"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="293dp" />
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password" />
 
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_boldcondensed"
         android:text="Username"
         android:textColor="@color/putih"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextUsernameLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
     <EditText
-        android:id="@+id/isiUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsernameLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
         android:ems="10"
-        android:background="@color/putih"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Username"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="238dp" />
-
-    <EditText
-        android:id="@+id/isiPassword"
-        android:layout_width="217dp"
-        android:layout_height="21dp"
-        android:background="@color/putih"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="355dp" />
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lupa password ?"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/roboto_boldcondensed"
+        android:text="Password"
         android:textColor="@color/putih"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="400dp" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPasswordLogin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="41dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="348dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="215dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="160px"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:background="@drawable/login_button"
+        android:fontFamily="@font/roboto_boldcondensed"
+        android:text="Button"
+        android:textColor="@color/putih"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLupaPassword" />
+
+    <TextView
+        android:id="@+id/textViewLupaPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:fontFamily="@font/roboto_boldcondensed"
+        android:text="Lupa Password?"
+        android:textColor="@color/companyColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

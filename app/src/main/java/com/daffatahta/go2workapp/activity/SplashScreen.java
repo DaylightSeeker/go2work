@@ -17,7 +17,6 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        //TODO set logo set header footer text
         EasySplashScreen config = new EasySplashScreen(SplashScreen.this)
                 .withFullScreen().withTargetActivity(MainActivity.class)
                 .withSplashTimeOut(5000)
