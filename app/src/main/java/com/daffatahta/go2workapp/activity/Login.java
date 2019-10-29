@@ -21,24 +21,16 @@ public class Login extends AppCompatActivity {
     private EditText username;
     private EditText password;
 
-    FirebaseAuth.AuthStateListener mAuthListener;
-
     @Override
     protected void onStart() {
         super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
+        //mAuth.addAuthStateListener(mAuthListener);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        mAuth = FirebaseAuth.getInstance();
-        //Todo : add type redirect when login!
-        if (mAuth.getCurrentUser() != null){
-            //start
-        }
 
         Slidr.attach(this);
 
