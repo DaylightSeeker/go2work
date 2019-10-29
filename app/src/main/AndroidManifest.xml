@@ -24,6 +24,9 @@
         <activity
             android:name=".activity.Login"
             android:theme="@style/AppTheme.slidr" />
+        <activity
+            android:name=".activity.FormLowongan"
+            android:theme="@style/AppTheme.slidr" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".activity.Register"

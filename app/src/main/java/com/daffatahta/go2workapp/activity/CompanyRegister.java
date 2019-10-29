@@ -11,18 +11,24 @@ import com.daffatahta.go2workapp.R;
 import com.r0adkll.slidr.Slidr;
 
 public class CompanyRegister extends AppCompatActivity {
+
     Button buttonNext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_company_register);
+
         Slidr.attach(this);
 
         buttonNext = (Button) findViewById(R.id.registerNextButton);
         buttonNext.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
+                Intent i = new Intent(view.getContext(), FormLowongan.class);
+                startActivity(i);
             }
         });
     }

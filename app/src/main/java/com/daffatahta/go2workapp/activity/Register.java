@@ -16,8 +16,8 @@ public class Register extends AppCompatActivity {
 
     private Button buttonUser;
     private Button buttonCompany;
-    private TextView goToLoginText
-            ;
+    private TextView goToLoginText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

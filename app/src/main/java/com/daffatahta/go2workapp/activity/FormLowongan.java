@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.daffatahta.go2workapp.R;
 
-public class formLowongan extends AppCompatActivity {
+public class FormLowongan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
