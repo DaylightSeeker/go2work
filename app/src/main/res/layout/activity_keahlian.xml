@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Keahlian"
+    android:background="@color/hitam">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keahlian"
+        android:textColor="@color/putih"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keahlian (Soft Skills)"
+        android:textColor="@color/putih"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Pilih Keahlian"
+        android:background="@color/putih"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Pekerjaan"
+        android:textColor="@color/putih"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Pilih Jenis Pekerjaan"
+        android:background="@color/putih"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengalaman Kerja (Tahun)"
+        android:textColor="@color/putih"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/putih"
+        android:text="1"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tingkat Pendidikan"
+        android:textColor="@color/putih"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/putih"
+        android:text="S1"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bahasa"
+        android:textColor="@color/putih"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/putih"
+        android:text="Indonesia"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="586dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
