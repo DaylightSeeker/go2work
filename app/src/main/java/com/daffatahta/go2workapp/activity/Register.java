@@ -18,8 +18,6 @@ public class Register extends AppCompatActivity {
     private Button buttonUser;
     private Button buttonCompany;
     private TextView goToLoginText;
-    FirebaseAuth mAuth;
-    FirebaseAuth.AuthStateListener mAuthListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +39,6 @@ public class Register extends AppCompatActivity {
                 openLoginActivity();
             }
         });
-
         buttonCompany = (Button) findViewById(R.id.companyRegister);
         buttonCompany.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,17 +46,6 @@ public class Register extends AppCompatActivity {
                 openCompanyRegister();
             }
         });
-
-        mAuth = FirebaseAuth.getInstance();
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                if (firebaseAuth.getCurrentUser() == null){
-                    startActivity(new Intent (Register.this,Login.class));
-                }
-            }
-        };
-
     }
     public void openUserRegister (){
         Intent i = new Intent(this, UserRegister.class);
