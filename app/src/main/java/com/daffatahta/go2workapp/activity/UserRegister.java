@@ -20,10 +20,15 @@ import android.widget.Toast;
 
 import com.daffatahta.go2workapp.MainActivity;
 import com.daffatahta.go2workapp.R;
+import com.daffatahta.go2workapp.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.r0adkll.slidr.Slidr;
 
 import org.w3c.dom.Text;
@@ -39,6 +44,7 @@ public class UserRegister extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private static final String TAG= "";
     private DatePickerDialog.OnDateSetListener mDateSetListener;
+    private DatabaseReference mData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +52,7 @@ public class UserRegister extends AppCompatActivity {
         setContentView(R.layout.activity_user_register);
 
         Slidr.attach(this);
-
+        mData = FirebaseDatabase.getInstance().getReference();
         usernameI = (EditText) findViewById(R.id.textViewUsernameUser);
         emailI = (EditText) findViewById(R.id.textViewEmailUser);
         passwordI = (EditText) findViewById(R.id.passwordUser);
@@ -78,12 +84,6 @@ public class UserRegister extends AppCompatActivity {
                 textViewDate.setText(date);
             }
         };
-        //buttonDate.setOnClickListener(new View.OnClickListener() {
-            //@Override
-           // public void onClick(View view) {
-
-           // }
-        //});
         mAuth = FirebaseAuth.getInstance();
         buttonNextUser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,29 +95,42 @@ public class UserRegister extends AppCompatActivity {
 
     public void UserRegister(){
         String username = usernameI.getText().toString();
-        String email = emailI.getText().toString();
+        final String email = emailI.getText().toString();
         String password = passwordI.getText().toString();
         String kota = kotaI.getText().toString();
         String provinsi = provinsiI.getText().toString();
 
         if (TextUtils.isEmpty(username)){
             Toast.makeText(getApplicationContext(), "Username harus di isi!", Toast.LENGTH_SHORT).show();
+            usernameI.setError("Field harus di isi!");
+            usernameI.requestFocus();
             return;
         }
         if (TextUtils.isEmpty(email)){
             Toast.makeText(getApplicationContext(), "Alamat Email harus di isi!", Toast.LENGTH_SHORT).show();
+            emailI.setError("Field harus di isi!");
+            emailI.requestFocus();
             return;
         }
         if (TextUtils.isEmpty(password)){
             Toast.makeText(getApplicationContext(), "Password harus di isi!", Toast.LENGTH_SHORT).show();
+            passwordI.setError("Field harus di isi!");
+            passwordI.requestFocus();
             return;
+        }else if (password.length() < 6){
+            passwordI.setError("Password terlalu pendek!");
+            passwordI.requestFocus();
         }
         if (TextUtils.isEmpty(kota)){
             Toast.makeText(getApplicationContext(), "Kota asal harus di isi!", Toast.LENGTH_SHORT).show();
+            kotaI.setError("Field harus di isi!");
+            kotaI.requestFocus();
             return;
         }
         if (TextUtils.isEmpty(provinsi)){
             Toast.makeText(getApplicationContext(), "Provinis asal harus di isi!", Toast.LENGTH_SHORT).show();
+            provinsiI.setError("Field harus di isi!");
+            provinsiI.requestFocus();
             return;
         }
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(UserRegister.this, new OnCompleteListener<AuthResult>() {
@@ -125,14 +138,37 @@ public class UserRegister extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Log.d(TAG, "createUserWithEmail.Success");
+                    authSuccess(task.getResult().getUser());
                     Intent intent = new Intent(UserRegister.this, MainActivity.class);
                     startActivity(intent);
                     finish();
-                }else{
+                }if (!task.isSuccessful()){
                     Log.w(TAG, "createUserWithEmail:fail", task.getException());
                     Toast.makeText(UserRegister.this, "Authentication failed!", Toast.LENGTH_SHORT).show();
+                }else if (task.getException() instanceof FirebaseAuthUserCollisionException){
+                    emailI.setError("Email already used");
+                    Toast.makeText(UserRegister.this, "Email account already exist. Please Login!", Toast.LENGTH_SHORT ).show();
                 }
             }
         });
     }
+
+    public void writeToDatabase(String userId, String username, String email, String password, String tanggal, String kota, String provinsi, String tipe){
+        User user = new User(username,email,password,tanggal,kota,provinsi,tipe);
+        //tipe = "user";
+        mData.child("User_worker").child(userId).setValue(user);
+        //mData.child("User_worker").child(userId).
+    }
+
+    public void authSuccess(FirebaseUser user){
+        String u = usernameI.getText().toString();
+        String p = passwordI.getText().toString();
+        String e = emailI.getText().toString();
+        String t = textViewDate.getText().toString();
+        String prov = provinsiI.getText().toString();
+        String k = kotaI.getText().toString();
+        String tipe = "user";
+        writeToDatabase(user.getUid(), u, e, p, t, k, prov, tipe);
+    }
+
 }

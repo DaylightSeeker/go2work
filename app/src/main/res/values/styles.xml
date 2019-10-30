@@ -11,13 +11,13 @@
     <style name="EditTextCompany" parent="Widget.AppCompat.EditText">
         <item name="android:paddingTop">20dp</item>
         <item name ="colorControlNormal">@color/companyColor</item>
-        <item name="colorControlActivated">@color/putih</item>
+        <item name="colorControlActivated">@color/userColor</item>
     </style>
 
     <style name="EditTextuser" parent="Theme.AppCompat.Light">
         <item name="android:padding">20dp</item>
         <item name="colorControlNormal">@color/userColor</item>
-        <item name="colorControlActivated">@color/putih</item>
+        <item name="colorControlActivated">@color/companyColor</item>
     </style>
 
     <style name="Tanggal_input">

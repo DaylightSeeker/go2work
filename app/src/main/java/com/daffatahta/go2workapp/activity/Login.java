@@ -50,12 +50,14 @@ public class Login extends AppCompatActivity {
             }
         });
     }
+
     public void toRegister (){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
+
     public void forgotPassword(){
         //Todo: make forgot password layout and class!
-        //Intent i = new Intent((this, ))
+
     }
 }
