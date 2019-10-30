@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
-        android:hint="username"
+        android:hint="Username"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
