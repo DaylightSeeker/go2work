@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +26,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.r0adkll.slidr.Slidr;
+
+import org.w3c.dom.Text;
 
 public class Login extends AppCompatActivity {
 
@@ -90,7 +94,7 @@ public class Login extends AppCompatActivity {
     }
 
     public boolean validateInput(){
-        boolean bool = true;
+        boolean bool = false;
         username = findViewById(R.id.editTextUsernameLogin);
         password = findViewById(R.id.editTextPasswordLogin);
 
@@ -104,27 +108,32 @@ public class Login extends AppCompatActivity {
             password.requestFocus();
             return false;
         }
-        return bool;
+        return bool = true;
+
     }
 
     private void login(){
         Log.d(TAG, "Login");
-        if (!validateInput()){
-            return;
-        }
-        String userN = username.getText().toString();
-        String passN = password.getText().toString();
-
-        mAuth.signInWithEmailAndPassword(userN, passN).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        final String userText = username.getText().toString();
+        String passText = password.getText().toString();
+        //if (TextUtils.isEmpty(userText)){
+        //    username.setError("Harus di isi!");
+        //    username.requestFocus();
+        //    return;
+        //}
+        //if (TextUtils.isEmpty(passText)){
+        //    password.setError("Harus di isi!");
+        //    password.requestFocus();
+        //    return;
+        //}
+        mAuth.signInWithEmailAndPassword(userText, passText).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                Log.d(TAG, "signin" + task.isSuccessful());
+                Log.d(TAG, "signin"+ userText + task.isSuccessful());
                 if (task.isSuccessful()){
-                    Intent i  = new Intent(Login.this, MainActivity.class);
-                    finish();
-                    i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    Intent i  = new Intent(Login.this, UserHome.class);
+                    i.setFlags(i.FLAG_ACTIVITY_NEW_TASK | i.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(i);
-                    finish();
                 }
                 else {
                     Toast.makeText(Login.this, "Login failed!", Toast.LENGTH_SHORT).show();
@@ -132,22 +141,26 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-    //todo : here
+
+    //private void signIn(String email, String password){
+    //    Log.e(TAG, "signIn:"+email);
+    //
+    //}
     //nagmbil tipe user
-    private void diff (final String tipe){
-        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.child(tipe).exists()){
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-    }
+    //private void diff (final String tipe){
+    //    mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+    //        @Override
+    //        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+    //            if (dataSnapshot.child(tipe).exists()){
+    //
+    //            }
+    //        }
+    //
+    //        @Override
+    //        public void onCancelled(@NonNull DatabaseError databaseError) {
+    //
+    //        }
+    //    });
+    //}
 
 }

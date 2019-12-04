@@ -18,7 +18,8 @@ public class SplashScreen extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         EasySplashScreen config = new EasySplashScreen(SplashScreen.this)
-                .withFullScreen().withTargetActivity(Register.class)
+                //.withFullScreen().withTargetActivity(Register.class)
+                .withFullScreen().withTargetActivity(UserHome.class)
                 .withSplashTimeOut(3000)
                 .withBackgroundColor(Color.parseColor("#000000"))
                 .withFooterText("Copyright DaylightSeeker 2019")

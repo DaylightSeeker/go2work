@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
         android:layout_marginTop="37dp"
         android:fontFamily="@font/rubik_bold"
         android:text="Silahkan Isi Form Berikut :"
@@ -53,28 +52,9 @@
         android:inputType="textPassword"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
-
         android:textSize="14sp"
-        android:theme="@style/EditTextCompany"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <EditText
-        android:id="@+id/kotaInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:ems="10"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="Kota"
-        android:inputType="textPersonName"
-        android:textColor="@color/putih"
-        android:textColorHint="@color/grey"
-        android:textSize="14sp"
-        android:theme="@style/EditTextCompany"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/companyNameInput"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
         android:id="@+id/userViewPendidikan"
@@ -84,8 +64,22 @@
         android:text="Nama Perusahaan"
         android:textColor="@color/putih"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toTopOf="@+id/guideline19" />
+        app:layout_constraintStart_toStartOf="@+id/emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+    <EditText
+        android:id="@+id/companyNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/tahoma"
+        android:hint="A Company"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/userViewPendidikan"
+        app:layout_constraintTop_toBottomOf="@+id/userViewPendidikan" />
 
     <TextView
         android:id="@+id/userViewKeahlian"
@@ -96,7 +90,22 @@
         android:textColor="@color/putih"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toBottomOf="@+id/companyNameInput" />
+        app:layout_constraintTop_toTopOf="@+id/guideline19" />
+
+    <EditText
+        android:id="@+id/websiteInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="acompany.com"
+        android:inputType="textPersonName"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/userViewKeahlian" />
 
     <TextView
         android:id="@+id/textView20"
@@ -110,42 +119,19 @@
         app:layout_constraintTop_toTopOf="@+id/guideline19" />
 
     <EditText
-        android:id="@+id/companyNameInput"
+        android:id="@+id/kotaInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:ems="10"
-        android:fontFamily="@font/tahoma"
-        android:hint="A Company"
-        android:inputType="textPersonName"
-        android:textColor="@color/putih"
-        android:textColorHint="@color/grey"
-        android:textSize="14sp"
-        android:theme="@style/EditTextCompany"
-        app:layout_constraintEnd_toStartOf="@+id/kotaInput"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userViewPendidikan" />
-
-    <EditText
-        android:id="@+id/websiteInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
-        android:hint="acompany.com"
+        android:hint="Kota"
         android:inputType="textPersonName"
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
         android:textSize="14sp"
-        android:theme="@style/EditTextCompany"
-        app:layout_constraintStart_toStartOf="@+id/guideline9"
-        app:layout_constraintTop_toTopOf="@+id/userViewKeahlian" />
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
 
     <EditText
         android:id="@+id/emailInput"
@@ -158,7 +144,6 @@
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
         android:textSize="14sp"
-        android:theme="@style/EditTextCompany"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/usernameInput"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -168,9 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
         android:ems="10"
         android:fontFamily="@font/tahoma"
         android:hint="Username"
@@ -178,7 +161,6 @@
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
         android:textSize="14sp"
-        android:theme="@style/EditTextCompany"
         app:layout_constraintEnd_toStartOf="@+id/emailInput"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
@@ -200,7 +182,6 @@
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
         android:layout_marginBottom="95dp"
         android:background="@drawable/button_company"
         android:fontFamily="@font/roboto_regular"
@@ -244,5 +225,46 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="213dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tahoma"
+        android:text="Contact Person"
+        android:textColor="@color/putih"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/websiteInput" />
+
+    <EditText
+        android:id="@+id/editTextContactPerson"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="No.Telp"
+        android:inputType="phone"
+        android:textColor="@color/putih"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline43"
+        app:layout_constraintEnd_toStartOf="@+id/guideline21"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="449dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="380dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

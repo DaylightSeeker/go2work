@@ -4,8 +4,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/common_google_signin_btn_text_dark_focused"
-    tools:context=".activity.Register">
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:background="@color/colorPrimary"
+    tools:context=".CompanyHome"/>

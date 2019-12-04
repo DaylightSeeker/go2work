@@ -53,13 +53,13 @@ public class UserRegister extends AppCompatActivity {
 
         Slidr.attach(this);
         mData = FirebaseDatabase.getInstance().getReference();
-        usernameI = (EditText) findViewById(R.id.textViewUsernameUser);
-        emailI = (EditText) findViewById(R.id.textViewEmailUser);
-        passwordI = (EditText) findViewById(R.id.passwordUser);
-        provinsiI = (EditText) findViewById(R.id.textViewProvinsiUser);
-        kotaI = (EditText) findViewById(R.id.textViewKotaUser);
-        textViewDate = (TextView) findViewById(R.id.textViewDate);
-        buttonNextUser = (Button) findViewById(R.id.nextButtonUser);
+        usernameI = findViewById(R.id.textViewUsernameUser);
+        emailI = findViewById(R.id.textViewEmailUser);
+        passwordI = findViewById(R.id.passwordUser);
+        provinsiI = findViewById(R.id.textViewProvinsiUser);
+        kotaI = findViewById(R.id.textViewKotaUser);
+        textViewDate = findViewById(R.id.textViewDate);
+        buttonNextUser = findViewById(R.id.nextButtonUser);
         //show dialog date
         //buttonDate = (Button) findViewById(R.id.buttonDate);
         textViewDate.setOnClickListener(new View.OnClickListener() {
@@ -156,7 +156,7 @@ public class UserRegister extends AppCompatActivity {
     public void writeToDatabase(String userId, String username, String email, String password, String tanggal, String kota, String provinsi, String tipe){
         User user = new User(username,email,password,tanggal,kota,provinsi,tipe);
         //tipe = "user";
-        mData.child("User_worker").child(userId).setValue(user);
+        mData.child("User").child(userId).setValue(user);
         //mData.child("User_worker").child(userId).
     }
 
@@ -170,5 +170,4 @@ public class UserRegister extends AppCompatActivity {
         String tipe = "user";
         writeToDatabase(user.getUid(), u, e, p, t, k, prov, tipe);
     }
-
 }

@@ -12,6 +12,7 @@
         <item name="android:paddingTop">20dp</item>
         <item name ="colorControlNormal">@color/companyColor</item>
         <item name="colorControlActivated">@color/userColor</item>
+        <item name="android:colorError">@color/companyColor</item>
     </style>
 
     <style name="EditTextuser" parent="Theme.AppCompat.Light">
@@ -28,5 +29,18 @@
     <style name="AppTheme.slidr">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.DeviceDefault.Spinner">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/tahoma</item>
+    </style>
+    <style name="AppTheme.NoActioBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>

@@ -25,15 +25,6 @@
         android:layout_height="wrap_content"
         android:text="Nama Pekerjaan"
         android:textColor="@color/putih"
-        app:layout_constraintStart_toStartOf="@+id/guideline22"
-        app:layout_constraintTop_toTopOf="@+id/guideline25" />
-
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Status Pekerjaan"
-        android:textColor="@color/putih"
         app:layout_constraintEnd_toStartOf="@+id/guideline23"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline22"
@@ -133,8 +124,6 @@
         android:id="@+id/editTextNamaPekerjaan"
         android:layout_width="179dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="Nama Pekerjaan"
@@ -144,52 +133,8 @@
         android:textColor="@color/putih"
         android:textColorHint="@color/grey"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
-        app:layout_constraintTop_toTopOf="@+id/guideline25" />
-
-    <EditText
-        android:id="@+id/editTextStatus"
-        android:layout_width="179dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:ems="10"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="Internship / Magang"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:paddingTop="0dp"
-        android:paddingBottom="0dp"
-        android:textColor="@color/putih"
-        android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline23"
         app:layout_constraintTop_toTopOf="@+id/guideline27" />
-
-    <EditText
-        android:id="@+id/editTextJenisPekerjaan"
-        android:layout_width="179dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:ems="10"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="Fulltime"
-        android:inputType="textPersonName"
-        android:paddingLeft="5dp"
-        android:paddingTop="0dp"
-        android:paddingBottom="0dp"
-        android:textColor="@color/putih"
-        android:textColorHint="@color/grey"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
-        app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
     <EditText
         android:id="@+id/editTextLokasi"
@@ -268,6 +213,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:ems="10"
+        android:textColor="@color/putih"
         android:hint="500000"
         android:inputType="number"
         android:paddingLeft="5dp"
@@ -342,5 +288,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="387dp" />
+
+    <Spinner
+        android:id="@+id/spinnerJenisPekerjaan"
+        style="@style/SpinnerTheme"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

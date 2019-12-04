@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.daffatahta.go2workapp.R;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.w3c.dom.Text;
 
@@ -18,11 +19,14 @@ public class Register extends AppCompatActivity {
     private Button buttonUser;
     private Button buttonCompany;
     private TextView goToLoginText;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        //mAuth.signOut();
 
         buttonUser = (Button) findViewById(R.id.userRegister);
         buttonUser.setOnClickListener(new View.OnClickListener() {
