@@ -139,7 +139,7 @@ public class UserRegister extends AppCompatActivity {
                 if (task.isSuccessful()){
                     Log.d(TAG, "createUserWithEmail.Success");
                     authSuccess(task.getResult().getUser());
-                    Intent intent = new Intent(UserRegister.this, MainActivity.class);
+                    Intent intent = new Intent(UserRegister.this, Register.class);
                     startActivity(intent);
                     finish();
                 }if (!task.isSuccessful()){
